@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version            0.0.0.1
+// @version            0.0.0.2
 // @grant              none
 // @match              *://www.youtube.com/playlist*
 // @connect            self
@@ -46,6 +46,10 @@
 	
 	var youtubePlaylistAutoRemoveDupesInterval = window.setInterval(function(){
 		document.querySelectorAll(".remove-duplicate-button").forEach(function(a){a.click();});
+		if (!(Boolean(document.querySelectorAll(".remove-duplicate-button").length)))
+		{
+			window.clearInterval(youtubePlaylistAutoRemoveDupesInterval);
+		}
 	},1000);
 	
 	//USERSCRIPT END
