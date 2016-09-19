@@ -6,7 +6,7 @@
 // @connect            *
 // @run-at             document-end
 // @name               youtube-playlist-auto-remove-dupes
-// @description        DESC
+// @description        userscript to automatically remove duplicates in youtube playlists
 // @author             Matthew James Burnham <mattman00000@gmail.com>
 // @priority           9001
 // @downloadURL        https://github.com/mattman00000/youtube-playlist-auto-remove-dupes/raw/master/youtube-playlist-auto-remove-dupes.user.js
