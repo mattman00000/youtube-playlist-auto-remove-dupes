@@ -1,10 +1,10 @@
 // ==UserScript==
-// @version            0.0.0.2
+// @version            0.0.0.3
 // @grant              none
 // @match              *://www.youtube.com/playlist*
 // @connect            self
 // @connect            *
-// @run-at             document-end
+// @run-at             document-start
 // @name               youtube-playlist-auto-remove-dupes
 // @description        userscript to automatically remove duplicates in youtube playlists
 // @author             Matthew James Burnham <mattman00000@gmail.com>
