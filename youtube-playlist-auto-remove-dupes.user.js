@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version            0.0.0.3
+// @version            0.0.0.4
 // @grant              none
 // @match              *://www.youtube.com/playlist*
 // @connect            self
@@ -45,6 +45,7 @@
 	//USERSCRIPT START
 	
 	var youtubePlaylistAutoRemoveDupesInterval = window.setInterval(function(){
+		console.debug("YT Playlist deduper "+youtubePlaylistAutoRemoveDupesInterval);
 		document.querySelectorAll(".remove-duplicate-button").forEach(function(a){a.click();});
 		if (!(Boolean(document.querySelectorAll(".remove-duplicate-button").length)))
 		{
